@@ -3,10 +3,14 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
+        let relatives=["Sandhya","Prakash","Vipul","Dk","Skv"];
         return(
            <>
-//write your code here
+<ol key="relativeList">
+{relatives.map((relative,index)=>(
+<li key={`relativeListItem"${index+1}`}>{relatives}</li>
+))}
+</ol>
 	</>
         )
     }
